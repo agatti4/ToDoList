@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/indexTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="1."
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/englishTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|left"
+            android:text="two"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/firstRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            tools:visibility="gone">
+
+            <Button
+                android:id="@+id/selectButton"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:onClick="selectList"
+                android:text="Select"
+                tools:visibility="gone" />
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:onClick="deleteList"
+                android:text="Delete"
+                tools:visibility="gone" />
+
+            <Button
+                android:id="@+id/hideButton"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:onClick="hideList"
+                android:text="Hide"
+                tools:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            tools:visibility="gone">
+
+            <Button
+                android:id="@+id/moveButton"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:onClick="moveList"
+                android:text="Move"
+                tools:visibility="gone" />
+
+            <EditText
+                android:id="@+id/posText"
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Pos"
+                android:inputType="number"
+                tools:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
